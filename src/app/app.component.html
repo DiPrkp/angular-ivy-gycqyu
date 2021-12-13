@@ -1,4 +1,52 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<!--<label>Введите имя:</label>
+
+<input [(ngModel)]="name" placeholder="name">
+<h1>Добро пожаловать {{name}}!</h1>
+
+<h1>{{title}}</h1>
+<div>
+<h1> Список покупок </h1>
+</div>
+<div class="panel">
+    <div class="form-inline">
+        <div class="form-group">
+            <div class="col-md-8">
+                <input class="form-control" [(ngModel)]="text" placeholder = "Название" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-6">
+                <input type="number" class="form-control" [(ngModel)]="price" placeholder="Цена" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-8">
+                <button class="btn btn-default" (click)="addItem(text, price)">Добавить</button>
+            </div>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Предмет</th>
+                <th>Цена</th>
+                <th>Куплено</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of items">
+                <td>{{item.purchase}}</td>
+                <td>{{item.price}}</td>
+                <td><input type="checkbox" [(ngModel)]="item.done" /></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+-->
+
+<app-top-bar></app-top-bar>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
